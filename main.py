@@ -132,13 +132,17 @@ class Player:
         self.havekey = False
         self.candyCount = 0
         self.havegift = False
+        
         maze[10][10] = 3  # for key
         maze[2][2] = 4  # for candy
         maze[2][10] = 4
-        maze[5][14] = 5  # for gift
+        maze[3][16] = 4
         maze[8][8] = 4
         maze[17][17] = 4
         maze[14][14] = 4
+        maze[5][10] = 4
+        maze[10][2] = 4
+        maze[5][14] = 5  # for gift
 
     def draw(self):
         screen.blit(playerImg, (self.x, self.y))
